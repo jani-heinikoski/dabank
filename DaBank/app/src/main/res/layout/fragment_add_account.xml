@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/fragment_add_account_textview_name_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/fragment_new_customer_name_text"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/fragment_add_account_edittext_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fragment_add_account_textview_name_header"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/custom_edittext"
+                android:gravity="start"
+                android:hint="e.g. John Johnson"
+                android:inputType="text"
+                android:maxLength="30"
+                android:maxLines="1"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="4dp"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/fragment_add_account_button_search_by_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/fragment_add_account_edittext_name"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/button_selector"
+                android:text="Search Customer"
+                android:textAllCaps="false"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="26sp" />
+
+            <TextView
+                android:id="@+id/fragment_add_account_customer_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fragment_add_account_button_search_by_name"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/fragment_add_account_customer_header_text"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/fragment_add_account_spinner_customers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fragment_add_account_customer_header"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/custom_spinner"
+                android:minHeight="32dp" />
+
+            <TextView
+                android:id="@+id/fragment_add_account_textview_type_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fragment_add_account_spinner_customers"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/fragment_add_account_type_header_text"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/fragment_add_account_spinner_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fragment_add_account_textview_type_header"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/custom_spinner"
+                android:minHeight="32dp" />
+
+            <TextView
+                android:id="@+id/fragment_add_account_textview_account_number_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fragment_add_account_spinner_type"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/fragment_add_account_account_number_header_text"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/fragment_add_account_edittext_account_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fragment_add_account_textview_account_number_header"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/custom_edittext"
+                android:gravity="start"
+                android:hint="e.g. FI00 0000 0000 0000 00"
+                android:inputType="text"
+                android:maxLength="18"
+                android:maxLines="1"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="4dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/fragment_add_account_textview_amount_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fragment_add_account_edittext_account_number"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/fragment_add_account_amount_header_text"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/fragment_add_account_edittext_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fragment_add_account_textview_amount_header"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/custom_edittext"
+                android:gravity="start"
+                android:hint="e.g. 100.35"
+                android:inputType="numberDecimal"
+                android:maxLength="15"
+                android:maxLines="1"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="4dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/fragment_add_account_is_credit_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fragment_add_account_edittext_amount"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/fragment_add_account_is_credit_header_text"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="18sp" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/fragment_add_account_switch_is_credit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/fragment_add_account_is_credit_header"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@id/fragment_add_account_is_credit_header" />
+
+            <EditText
+                android:id="@+id/fragment_add_account_edittext_credit_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/fragment_add_account_switch_is_credit"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="4dp"
+                android:layout_toEndOf="@id/fragment_add_account_switch_is_credit"
+                android:background="@drawable/custom_edittext"
+                android:gravity="start"
+                android:hint="Amount"
+                android:inputType="numberDecimal"
+                android:maxLength="15"
+                android:maxLines="1"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="4dp"
+                android:textSize="18sp"
+                android:visibility="invisible" />
+
+            <DatePicker
+                android:id="@+id/fragment_add_account_datepicker_due_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fragment_add_account_edittext_credit_amount"
+                android:layout_marginHorizontal="16dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/custom_edittext"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/fragment_add_account_button_add_account"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/fragment_add_account_datepicker_due_date"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/button_selector"
+                android:text="Add Account"
+                android:textAllCaps="false"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="26sp" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

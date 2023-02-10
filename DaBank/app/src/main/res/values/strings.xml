@@ -1,0 +1,97 @@
+<resources>
+    <string name="app_name">DaBank</string>
+
+    <string name="current_account_as_string">Current Account</string>
+    <string name="savings_account_as_string">Savings Account</string>
+    <string name="fixed_term_account_as_string">Fixed-term Account</string>
+
+    <string name="login_activity_header_text">Login page</string>
+
+    <string name="fragment_login_header_text"><u>Login to bank: </u></string>
+    <string name="fragment_login_invalid_credentials_text">Invalid credentials!</string>
+
+    <string name="fragment_main_button_new_payment_text">New Payment</string>
+    <string name="fragment_main_button_new_transfer_text">My Transfer</string>
+    <string name="fragment_main_button_accounts_text">Accounts</string>
+    <string name="fragment_main_button_simulations_text">Simulations</string>
+    <string name="fragment_main_button_profile_text">Profile</string>
+
+    <string name="fragment_new_payment_payee_account">Payee\'s account</string>
+    <string name="fragment_new_payment_payee_name">Payee\'s name</string>
+    <string name="fragment_new_payment_reference_text">Reference number</string>
+    <string name="fragment_new_payment_message_text">Message</string>
+    <string name="fragment_new_payment_date_text">Due date</string>
+    <string name="fragment_new_payment_amount_text">Amount in euros €</string>
+    <string name="fragment_new_payment_payer_text">Payer account</string>
+    <string name="fragment_new_payment_recurrence_text">Recurrence</string>
+
+    <string name="fragment_navigation_button_new_customer_text">Create a new customer</string>
+    <string name="fragment_navigation_button_add_accounts_text">Add an account to an existing customer</string>
+
+    <string name="fragment_new_customer_name_text">Customer\'s name</string>
+    <string name="fragment_new_customer_user_text">Customer\'s username (for login)</string>
+    <string name="fragment_new_customer_password_text">Customer\'s password (for login)</string>
+    <string name="fragment_new_customer_address_text">Customer\'s address</string>
+    <string name="fragment_new_customer_zipcode_text">Customer\'s zipcode</string>
+    <string name="fragment_new_customer_phone_text">Customer\'s phone number</string>
+    
+    <string name="fragment_add_account_customer_header_text">Pick customer after searching</string>
+    <string name="fragment_add_account_type_header_text">Account type</string>
+    <string name="fragment_add_account_account_number_header_text">Account number</string>
+    <string name="fragment_add_account_amount_header_text">Initial balance in euros</string>
+    <string name="fragment_add_account_is_credit_header_text">Credit account</string>
+
+    <string name="fragment_accounts_textview_header_text">Choose an account to inspect its transactions</string>
+
+    <string name="fragment_my_transfer_textview_from_account_header_text">Account to withdraw from</string>
+    <string name="fragment_my_transfer_textview_to_account_header_text">Account to deposit to</string>
+    <string name="fragment_my_transfer_button_transfer_text">Transfer</string>
+
+    <string name="fragment_transaction_detail_from_account_number_text">From account:</string>
+    <string name="fragment_transaction_detail_from_bank_bic_text">From bank BIC:</string>
+    <string name="fragment_transaction_detail_to_account_number_text">To account:</string>
+    <string name="fragment_transaction_detail_to_bank_bic_text">To bank BIC:</string>
+    <string name="fragment_transaction_detail_amount_text">Amount:</string>
+    <string name="fragment_transaction_detail_date_text">Date:</string>
+    <string name="fragment_transaction_detail_reference_number_text">Reference no.:</string>
+    <string name="fragment_transaction_detail_transaction_type_text">Transaction type:</string>
+    <string name="fragment_transaction_detail_message_text">Message:</string>
+
+    <string name="fragment_profile_name_header_text">Name</string>
+    <string name="fragment_profile_address_header_text">Address</string>
+    <string name="fragment_profile_phone_header_text">Phone number</string>
+    <string name="fragment_profile_zipcode_header_text">Zipcode</string>
+    <string name="fragment_profile_apply_changes_text">Apply Changes</string>
+
+    <string name="fragment_bank_cards_add_card_header_text">Add bank cards</string>
+
+    <string name="fragment_add_bank_card_card_number_header_text">Card number</string>
+    <string name="fragment_add_bank_card_country_limit_header_text">Country limit</string>
+    <string name="fragment_add_bank_card_withdraw_limit_header_text">Withdraw limit</string>
+    <string name="fragment_add_bank_card_payment_limit_header_text">Payment limit</string>
+    <string name="fragment_add_bank_card_add_card_text">Add Bankcard</string>
+
+    <string name="fragment_bank_card_settings_withdraw_limit_header_text">Withdraw limit</string>
+    <string name="fragment_bank_card_settings_payment_limit_header_text">Payment limit</string>
+    <string name="fragment_bank_card_settings_country_limit_header_text">Country limit</string>
+    <string name="fragment_bank_card_settings_frozen_header_text">Card frozen</string>
+    <string name="fragment_bank_card_settings_update_card_text">Update Information</string>
+
+    <string name="fragment_simulations_button_atm_text">ATM simulation</string>
+    <string name="fragment_simulations_button_payment_text">Card payment simulation</string>
+
+    <string name="fragment_atm_simulation_choose_bank_card_header_text">Choose a bankcard</string>
+    <string name="fragment_atm_simulation_amount_text">Amount</string>
+    <string name="fragment_atm_simulation_withdraw_text">Withdraw amount</string>
+    <string name="fragment_atm_simulation_deposit_text">Deposit amount</string>
+    <string name="fragment_atm_simulation_country_limit_header_text">Country limit (your location, only for withdraw)</string>
+
+    <string name="fragment_bank_card_payment_simulation_country_limit_header_text">Country (your location)</string>
+    <string name="fragment_bank_card_payment_simulation_pay_text">Pay</string>
+
+    <string name="fragment_account_settings_update_account_text">Update Account</string>
+    <string name="fragment_account_settings_delete_pendings_text">Delete Pending Payments</string>
+    <string name="fragment_account_settings_frozen_header_text">Account frozen</string>
+    <string name="fragment_account_settings_name_header_text">Account name</string>
+
+</resources>

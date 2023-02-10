@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/fragment_new_payment_textview_payee_account_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/fragment_new_payment_payee_account"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/fragment_new_payment_edittext_payee_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fragment_new_payment_textview_payee_account_header"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/custom_edittext"
+            android:gravity="start"
+            android:hint="e.g. FI0000000000000000"
+            android:inputType="text"
+            android:maxLength="18"
+            android:maxLines="1"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="4dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/fragment_new_payment_textview_payee_name_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fragment_new_payment_edittext_payee_account"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/fragment_new_payment_payee_name"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/fragment_new_payment_edittext_payee_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fragment_new_payment_textview_payee_name_header"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/custom_edittext"
+            android:gravity="start"
+            android:inputType="text"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="4dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/fragment_new_payment_textview_reference_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fragment_new_payment_edittext_payee_name"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Reference number"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/fragment_new_payment_edittext_reference"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fragment_new_payment_textview_reference_header"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/custom_edittext"
+            android:gravity="start"
+            android:inputType="text"
+            android:maxLength="15"
+            android:maxLines="1"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="4dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/fragment_new_payment_textview_message_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fragment_new_payment_edittext_reference"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/fragment_new_payment_message_text"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/fragment_new_payment_edittext_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fragment_new_payment_textview_message_header"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/custom_edittext"
+            android:gravity="start"
+            android:inputType="textLongMessage"
+            android:maxLength="100"
+            android:maxLines="5"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="4dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/fragment_new_payment_textview_date_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fragment_new_payment_edittext_message"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/fragment_new_payment_date_text"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="18sp" />
+
+        <CalendarView
+            android:id="@+id/fragment_new_payment_calendarview_due_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fragment_new_payment_textview_date_header"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/custom_edittext" />
+
+        <TextView
+            android:id="@+id/fragment_new_payment_textview_amount_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fragment_new_payment_calendarview_due_date"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/fragment_new_payment_amount_text"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/fragment_new_payment_edittext_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fragment_new_payment_textview_amount_header"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/custom_edittext"
+            android:gravity="start"
+            android:inputType="numberDecimal"
+            android:hint="e.g. 100,0"
+            android:maxLength="15"
+            android:maxLines="1"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="4dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/fragment_new_payment_textview_payer_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fragment_new_payment_edittext_amount"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/fragment_new_payment_payer_text"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/fragment_new_payment_spinner_payer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fragment_new_payment_textview_payer_header"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/custom_spinner"
+            android:minHeight="32dp" />
+
+        <TextView
+            android:id="@+id/fragment_new_payment_textview_recurrence_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fragment_new_payment_spinner_payer"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/fragment_new_payment_recurrence_text"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/fragment_new_payment_spinner_recurrence"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fragment_new_payment_textview_recurrence_header"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/custom_spinner"
+            android:minHeight="32dp" />
+
+        <Button
+            android:id="@+id/fragment_new_payment_button_continue"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/fragment_new_payment_spinner_recurrence"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="16dp"
+            android:background="@drawable/button_selector"
+            android:text="Confirm Payment"
+            android:textSize="24sp"
+            android:textAllCaps="false"
+            android:textColor="@color/colorSecondaryText" />
+
+    </RelativeLayout>
+
+
+</ScrollView>
