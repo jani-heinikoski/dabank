@@ -28,10 +28,28 @@ Drawbacks:
 * Data-access should use an object-relation mapper (ORM) such as [Room](https://developer.android.com/training/data-storage/room) instead of the SQLite APIs within the Android core libraries.
 * Styles and theming should be better abstracted into common resources to make changes much easier.
 * Documentation is not very comprehensive to say the least.
+* Does not have any tests.
+* Version history is what it is (commits are very large and not what I would consider in a production environment)
 
-In conclusion, this project was intended to be a learning journey to native Android development, and should not be taken as a guide for best practices.
+In conclusion, **this project was intended to be a learning journey to native Android development, and should not be taken as a guide for best practices**.
 
-# Source code files
+## Tech Stack
+
+**Project:** Created on Android Studio Arctic Fox (2021), minimum SDK version 23, target SDK version 29
+
+**Database:** SQLite
+
+**Programming language:** Java
+
+
+
+## Source code files
 
 [See the relevant source code here](https://github.com/jani-heinikoski/viewmodel-demo/tree/main/app/src/main/java/com/lut/jh/viewmodeldemo)
+
+
+
+## Authors
+
+- [@jani-heinikoski](https://github.com/jani-heinikoski/)
 
